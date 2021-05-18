@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:backgroundTint="#FFFFFF">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/menuImageViewItemImage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="6dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/lemon_rice" />
+
+        <Button
+            android:id="@+id/buttonAddItem"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:backgroundTint="@color/light_pink"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="Add"
+            android:textSize="8sp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/menuTextViewItemName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/menuTextViewItemName" />
+
+        <TextView
+            android:id="@+id/menuTextViewItemName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="Butter Chicken (Boneless)"
+            android:textAppearance="@android:style/TextAppearance.Material.Title"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/buttonAddItem"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/menuImageViewItemImage"
+            app:layout_constraintTop_toTopOf="@+id/menuImageViewItemImage" />
+
+        <TextView
+            android:id="@+id/menuTextViewItemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="₹ 120.00"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/menuTextViewItemName"
+            app:layout_constraintTop_toBottomOf="@+id/menuTextViewItemName" />
+
+        <TextView
+            android:id="@+id/menuTextViewItemDescription"
+            android:layout_width="272dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="8dp"
+            android:text="Rich and creamy blend of tomatoes, butter, curry and spices with a mild meat."
+            android:textAppearance="@android:style/TextAppearance.Material.Small"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/menuTextViewItemPrice"
+            app:layout_constraintTop_toBottomOf="@+id/menuTextViewItemPrice" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

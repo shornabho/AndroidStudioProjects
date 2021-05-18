@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "274840930579",
+    "project_id": "testio-72398",
+    "storage_bucket": "testio-72398.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274840930579:android:be05b9bee26fbdf1a0f2e6",
+        "android_client_info": {
+          "package_name": "com.mcs.android.testio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "274840930579-vot9m07j0pqaecpec8ig93pohs5stloq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mcs.android.testio",
+            "certificate_hash": "cbdd251f149e787ee54c9830e2e3ec8ea21e5f73"
+          }
+        },
+        {
+          "client_id": "274840930579-vjl02tbk6jfecfo3one0nf6m5llu2jb6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAu9eOsCUmBJMdzg5pBni6eKuhr1OiFcs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "274840930579-vjl02tbk6jfecfo3one0nf6m5llu2jb6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

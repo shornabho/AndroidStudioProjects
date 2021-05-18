@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/acme</item>
+        <item>@font/akronim</item>
+        <item>@font/alex_brush</item>
+        <item>@font/allura</item>
+        <item>@font/autour_one</item>
+        <item>@font/bangers</item>
+        <item>@font/cabin_sketch_bold</item>
+        <item>@font/frijole</item>
+    </array>
+</resources>

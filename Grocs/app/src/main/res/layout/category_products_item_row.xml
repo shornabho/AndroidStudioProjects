@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:backgroundTint="#FFFFFF"
+    android:padding="10dp"
+    android:paddingRight="15dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/ivCategoryProductImage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="6dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/tvCategoryProductShop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dp"
+            android:paddingTop="2dp"
+            android:paddingRight="3dp"
+            android:paddingBottom="2dp"
+            android:textAllCaps="true"
+            android:text="Fresho"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:textColor="@color/leaf_green_500"
+            android:textSize="8sp"
+            app:layout_constraintStart_toStartOf="@+id/tvCategoryProductTitle"
+            app:layout_constraintTop_toTopOf="@+id/ivCategoryProductImage" />
+
+        <Button
+            android:id="@+id/btnCategoryProductAddItem"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:backgroundTint="@color/leaf_green_700"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="Add"
+            android:textColor="@color/white"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvCategoryProductTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvCategoryProductShop" />
+
+        <TextView
+            android:id="@+id/tvCategoryProductTitle"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Onions"
+            android:textAppearance="@android:style/TextAppearance.Material.Title"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/btnCategoryProductAddItem"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/ivCategoryProductImage"
+            app:layout_constraintTop_toBottomOf="@+id/tvCategoryProductShop" />
+
+        <TextView
+            android:id="@+id/tvCategoryProductSellingPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="₹ 120.00"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/tvCategoryProductTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvCategoryProductTitle" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tvCategoryProductSellingPrice"
+            app:layout_constraintStart_toEndOf="@+id/tvCategoryProductSellingPrice"
+            app:layout_constraintTop_toTopOf="@+id/tvCategoryProductSellingPrice">
+
+            <TextView
+                android:id="@+id/tvCategoryProductMRP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="₹ 120.00"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="10sp"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_alignStart="@id/tvCategoryProductMRP"
+                android:layout_alignEnd="@id/tvCategoryProductMRP"
+                android:layout_centerVertical="true"
+                android:background="@android:color/darker_gray" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvCategoryProductQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@color/leaf_green_200"
+            android:paddingLeft="3dp"
+            android:paddingTop="2dp"
+            android:paddingRight="3dp"
+            android:paddingBottom="2dp"
+            android:text="1kg"
+            android:textAppearance="@android:style/TextAppearance.Material.Small"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/tvCategoryProductSellingPrice"
+            app:layout_constraintTop_toBottomOf="@+id/tvCategoryProductSellingPrice" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
